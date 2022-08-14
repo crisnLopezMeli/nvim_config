@@ -55,4 +55,5 @@ lualine.setup {
     lualine_y = { location },
     lualine_z = { "progress" },
   },
+  theme = {"tokyonight"},
 }
