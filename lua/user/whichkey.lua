@@ -4,18 +4,18 @@ if not status_ok then
 end
 
 wk.register({
-  c = {"<cmd>Bdelete!<CR>", "Close Buffer"},
+  c = {"<CMD>Bdelete!<CR>", "Close Buffer"},
   d = {
     name = "DAP",
-    b = {"<cmd>lua require'dap'.toggle_breakpoint()<cr>","Toggle BreakPoint"},
-    c = {"<cmd>lua require'dap'.continue()<cr>","Continue"},
-    i = {"<cmd>lua require'dap'.step_into()<cr>","Step Into"},
-    o = {"<cmd>lua require'dap'.step_over()<cr>","Step Over"},
-    O = {"<cmd>lua require'dap'.step_out()<cr>","Step Out"},
-    r = {"<cmd>lua require'dap'.repl.toggle()<cr>","Repl Toggle"},
-    l = {"<cmd>lua require'dap'.run_last()<cr>","Run Last"},
-    u = {"<cmd>lua require'dapui'.toggle()<cr>","Toggle DapUI"},
-    t = {"<cmd>lua require'dap'.terminate()<cr>","Dap Terminate"},
+    b = {"<CMD>lua require'dap'.toggle_breakpoint()<cr>","Toggle BreakPoint"},
+    c = {"<CMD>lua require'dap'.continue()<cr>","Continue"},
+    i = {"<CMD>lua require'dap'.step_into()<cr>","Step Into"},
+    o = {"<CMD>lua require'dap'.step_over()<cr>","Step Over"},
+    O = {"<CMD>lua require'dap'.step_out()<cr>","Step Out"},
+    r = {"<CMD>lua require'dap'.repl.toggle()<cr>","Repl Toggle"},
+    l = {"<CMD>lua require'dap'.run_last()<cr>","Run Last"},
+    u = {"<CMD>lua require'dapui'.toggle()<cr>","Toggle DapUI"},
+    t = {"<CMD>lua require'dap'.terminate()<cr>","Dap Terminate"},
   },
   e = {":NvimTreeToggle<CR>", "NvimTree"},
   f = {
@@ -27,18 +27,22 @@ wk.register({
   },
   g = {
     name = "Git",
-    g = {"<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Toggle LazyGit"},
+    g = {"<CMD>lua _LAZYGIT_TOGGLE()<CR>", "Toggle LazyGit"},
   },
-  h = {"<cmd>nohlsearch<CR>", "no hightlight"},
+  h = {"<CMD>nohlsearch<CR>", "no hightlight"},
   l = {
-    r = {"<cmd>lua vim.lsp.buf.rename()<cr>", "Rename"},
+    name = "LSP",
+    a = {"<CMD> lua vim.lsp.buf.code_action<CR>", "LSP code action"},
+    f = {"<CMD> lua vim.lsp.buf.formatting_sync<CR>", "Format code"},
+    h = {"<CMD> lua vim.lsp.buf.signature_help<CR>", "Signature help"},
+    r = {"<CMD>lua vim.lsp.buf.rename()<CR>", "Rename current simbol"},
   },
   m = {
     name = "Miscelaneous",
-    W = {"<cmd>wq<CR>", "Save + Quit"},
-    Q = {"<cmd>q<CR>", "Quit!"},
+    W = {"<CMD>wq<CR>", "Save + Quit"},
+    Q = {"<CMD>q<CR>", "Quit!"},
   },
-  w = {"<cmd>w<CR>", "Save"},
-  q = {"<cmd>q<CR>", "Quit"},
-  ["/"] = {"<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", "Comment"},
-}, { prefix = "<leader>" })
+  w = {"<CMD>w<CR>", "Save"},
+  q = {"<CMD>q<CR>", "Quit"},
+  ["/"] = {"<CMD>lua require('Comment.api').toggle_current_linewise()<CR>", "Comment"},
+}, {prefix = "<leader>"})
