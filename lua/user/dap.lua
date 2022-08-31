@@ -24,7 +24,7 @@ dapui.setup {
       { id = "breakpoints", size = 0.25 },
     },
     size = 40,
-    position = "right", -- Can be "left", "right", "top", "bottom"
+    position = "left", -- Can be "left", "right", "top", "bottom"
   },
   tray = {
     elements = {},
