@@ -47,13 +47,11 @@ wk.register({
       l = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Diagnostic list" }, -- default <leader>
       r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename current simbol" },
     },
-    m = {
-      name = "Miscelaneous",
-      W = { "<cmd>wq<cr>", "Save + Quit" },
-      Q = { "<cmd>q<cr>", "Quit!" },
-    },
+    W = { "<cmd>wq<cr>", "Save + Quit" },
+    Q = { "<cmd>q!<cr>", "Quit!" },
+    t = { "<cmd>GoTestPackageOnSave<cr> <cmd>w<cr>", "Go Test package" },
     w = { "<cmd>w<cr>", "Save" },
     q = { "<cmd>q<cr>", "Quit" },
-    ["/"] = { "<cmd>lua require('Comment.api').toggle_current_linewise()<cr>", "Comment" },
+    ["/"] = { "<cmd>lua require('Comment.api').toggle.linewise()<cr>", "Comment" },
   },
 })
