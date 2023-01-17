@@ -26,7 +26,9 @@ wk.register({
     },
     g = {
       name = "Git",
+      b = { "<cmd>Gitsigns blame_line<cr>", "Current blame line" },
       g = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Toggle LazyGit" },
+      t = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Toggle current line blame" }
     },
     h = { "<cmd>nohlsearch<cr>", "no hightlight" },
     l = {
@@ -49,6 +51,7 @@ wk.register({
     },
     W = { "<cmd>wq<cr>", "Save + Quit" },
     Q = { "<cmd>q!<cr>", "Quit!" },
+    s = { "<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline" },
     t = { "<cmd>GoTestPackageOnSave<cr> <cmd>w<cr>", "Go Test package" },
     w = { "<cmd>w<cr>", "Save" },
     q = { "<cmd>q<cr>", "Quit" },
