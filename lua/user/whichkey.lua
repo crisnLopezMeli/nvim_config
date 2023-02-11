@@ -28,7 +28,14 @@ wk.register({
       name = "Git",
       b = { "<cmd>Gitsigns blame_line<cr>", "Current blame line" },
       g = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Toggle LazyGit" },
-      t = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Toggle current line blame" }
+      t = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Toggle current line blame" },
+      c = {
+        name = "Conflict",
+        o = {"<cmd>GitConflictChooseOurs<cr>", "Ours"},
+        t = {"<cmd>GitConflictChooseTheirs<cr>", "Theirs"},
+        b = {"<cmd>GitConflictChooseBoth<cr>", "Both"},
+        n = {"<cmd>GitConflictChooseNone<cr>", "None"},
+      },
     },
     h = { "<cmd>nohlsearch<cr>", "no hightlight" },
     l = {

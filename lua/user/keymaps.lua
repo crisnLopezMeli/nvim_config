@@ -28,6 +28,18 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- Search always center
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+keymap("n", "j", "jzzzv", opts)
+keymap("n", "k", "kzzzv", opts)
+keymap("n", "{", "{zzzv", opts)
+keymap("n", "}", "}zzzv", opts)
+keymap("n", "{", "{zzzv", opts)
+keymap("n", "}", "}zzzv", opts)
+keymap("n", "<C-d>", "<C-d>zzzv", opts)
+keymap("n", "<C-u>", "<C-u>zzzv", opts)
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
