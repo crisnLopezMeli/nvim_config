@@ -60,7 +60,8 @@ return packer.startup(function(use)
   use { "simrat39/symbols-outline.nvim" }
 
   -- Colorschemes
-  use { "folke/tokyonight.nvim" }
+  --[[ use { "folke/tokyonight.nvim" } ]]
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp" } -- The completion plugin
