@@ -10,7 +10,6 @@ configs.setup({
     "lua",
     "make",
     "markdown",
-    "markdown_inline",
     "python",
     "regex",
     "sql",
